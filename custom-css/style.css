@@ -54,23 +54,68 @@ h1 {
 .img-footer {
 
     height: 69px;
-    width: -2px
+    width: -2px;
+    display: none;
+
 }
 
 
 
-@media only screen and (max-width: 768px) {
-    .img-footer {
 
-        margin: auto;
-        margin-top: auto;
+
+
+
+
+
+@media only screen and (min-width: 480px) {
+
+    .footer-hide {
+
+        height: 69px;
+        width: -2px;
         display: none;
+
     }
+
+
 }
 
-@media only screen and (min-width: 275px) and (max-width:900px) {
-    .img-footer {
+@media only screen and (min-width:230px) {
+    .footer-hide {
         display: none;
     }
+
+
+
+}
+
+@media only screen and (min-width: 900px) {
+
+    .footer-hide {
+        height: 104px;
+        width: -2px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .footer-hide {
+        height: 104px;
+        width: -2px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-hide>h1 {
+        text-align: center;
+    }
+
 
 }
